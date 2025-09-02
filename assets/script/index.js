@@ -14,4 +14,10 @@ for (let i=0 ;i<10;i++){
     newElement.textContent=`paragraphe ${i+1}`;
     bloc_paragraphe.appendChild(newElement);
 }
+// exercice 1 tache 3
+const couleur=["green","blue","yellow","lightgray","black"];
+const cellule=document.querySelectorAll('#table td');
 
+cellule.forEach((cell, index) => {
+    cell.style.color = couleur[index % couleur.length];
+});
